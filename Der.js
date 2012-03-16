@@ -61,7 +61,6 @@ Der.getByClass = function(cssName, nodeRefer) {
    * cssName:样式名,
    * nodeRefer:参照节点[可选]
    */
-
   if (typeof document.getElementsByClassName === "function") { //判断是否原生支持getElementsByClassName
     nodeRefer = (nodeRefer) ? nodeRefer : document; //无参照节点则设参照节点为document
     return Array.prototype.slice.call(nodeRefer.getElementsByClassName(cssName)); //返回转化为数组的节点集合
