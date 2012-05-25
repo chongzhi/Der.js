@@ -14,7 +14,7 @@ window.Der = window.Der || {}; //变量绑定到全局空间
 
 //通过id获取节点元素
 Der.getById = Der.g = function(id) {
-  if (typeof id === "string" && !! id) {
+  if (typeof id === "string" && !! id) {    
     return document.getElementById(id);
   }
 };
